@@ -32,6 +32,15 @@
 }
 
 .errorInput {
+    /*width: 370px;*/
+    /*height: 36px;*/
+    /*border-radius: 5px;*/
+    /*padding: 5px 10px;*/
+    /*font-size: 16px;*/
+    /*line-height: 20px;*/
+    /*font-weight: 500;*/
+    /*font-family: 'Montserrat', sans-serif;*/
+    /*outline: 0;*/
     border:1px solid rgba(204, 0, 0, 1);
 }
 

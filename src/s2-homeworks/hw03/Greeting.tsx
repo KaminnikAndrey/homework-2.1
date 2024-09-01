@@ -28,6 +28,7 @@ const Greeting: React.FC<GreetingPropsType> = (
 ) => {
     // s.errorInput
     const inputClass = error === "Ошибка! Введите имя!" ? `${s.input} ${s.errorInput}` : s.input
+    //const inputClass = error === "Ошибка! Введите имя!" ? s.errorInput : s.input
 
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
