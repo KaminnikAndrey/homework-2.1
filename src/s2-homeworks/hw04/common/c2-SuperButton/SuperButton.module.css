@@ -11,13 +11,6 @@
 }
 
 
-.disabled {
-    background-color: rgba(0, 46, 92, 1);
-    color: black;
-    opacity: 0.5;
-    cursor: auto;
-}
-
 .secondary {
     color: rgba(0, 102, 204, 1);
     border: 1px solid rgba(0, 102, 204, 1);
@@ -32,6 +25,13 @@
 .red {
     background-color: rgba(204, 20, 57, 1);
     color: #fff;
+}
+
+.disabled {
+    background-color: rgba(0, 46, 92, 1);
+    color: black;
+    opacity: 0.5;
+    cursor: auto;
 }
 
 .default:hover {

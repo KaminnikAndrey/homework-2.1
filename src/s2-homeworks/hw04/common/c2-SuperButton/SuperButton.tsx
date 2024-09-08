@@ -25,8 +25,8 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
         case 'red' :
             finalClassName = s.button + ' ' + s.red
             break
-        case 'disable' :
-            finalClassName = s.button + ' ' + s.disable
+        case 'disabled' :
+            finalClassName = s.button + ' ' + s.disabled
             break
         case 'secondary' :
             finalClassName =s.button + ' ' + s.secondary
