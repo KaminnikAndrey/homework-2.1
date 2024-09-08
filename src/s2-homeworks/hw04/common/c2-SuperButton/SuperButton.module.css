@@ -10,10 +10,8 @@
     cursor: pointer;
 }
 
-.disabled {
-}
 
-.disable {
+.disabled {
     background-color: rgba(0, 46, 92, 1);
     color: black;
     opacity: 0.5;
