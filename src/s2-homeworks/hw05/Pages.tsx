@@ -24,7 +24,7 @@ function Pages() {
                 <Route path={PATH.PRE_JUNIOR} element={<PreJunior />}/>
                 <Route path={PATH.JUNIOR} element={<Junior/>}/>
                 <Route path={PATH.JUNIOR_PLUS} element={<JuniorPlus/>}/>
-                <Route path='*/' element={<Error404/>}/>
+                <Route path='/*' element={<Error404/>}/>
             </Routes>
         </div>
     )
