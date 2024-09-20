@@ -10,7 +10,6 @@ type PropsType = {
 
 }
 
-
 export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
     let [currentPage, setСurrentPage] = useState(PATH.PRE_JUNIOR)
 
