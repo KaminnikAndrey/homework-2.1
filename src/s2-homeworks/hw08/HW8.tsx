@@ -31,7 +31,7 @@ const HW8 = () => {
     const [people, setPeople] = useState<UserType[]>(initialPeople)
     const [currentSort, setCurrentSort] = useState('')
 
-    const finalPeople = people.map((u: UserType) => <User key={u._id} u={u}/>)
+    const finalPeople = <div className={s.itemContainer}>{people.map((u: UserType) => <User key={u._id} u={u}/>)}</div>
 
     const sortUp = () => {
         setPeople(
@@ -82,16 +82,15 @@ const HW8 = () => {
                         </SuperButton>
                     </div>
 
-                    <table id={'hw8-users'} className={s.users}>
-                        <thead className={s.thead}>
-                        <tr>
-                            <td className={s.nameCol}>Name</td>
-                            <td className={s.ageCol}>Age</td>
-                        </tr>
-                        </thead>
-
-                        <tbody>{finalPeople}</tbody>
-                    </table>
+                    <div id={'hw8-users'} className={s.users}>
+                        <div className={s.myContainer}>
+                            <div className={s.thead}>
+                                <div className={s.nameCol}>Full name</div>
+                                <div className={s.ageCol}>Age</div>
+                            </div>
+                        </div>
+                        <div>{finalPeople}</div>
+                    </div>
                 </div>
             </div>
         </div>
