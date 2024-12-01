@@ -31,14 +31,16 @@ function Clock() {
     }
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const months = [
-        'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
-        'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'
     ];
+
     const hours = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
     const stringTime = `${hours}:${minutes}:${seconds}` || <br/> // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
-    const stringDate = `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}` || <br/> // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
+    const stringDate = `${date.getDate() < 10 ? `${0}date.getDate()` : date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}` ||
+        <br/> // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
 
     // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
     const stringDay = daysOfWeek[date.getDay()] || <br/> // пишут студенты
@@ -76,7 +78,7 @@ function Clock() {
                 <SuperButton
                     id={'hw9-button-start'}
                     disabled={disabled} // пишут студенты // задизэйблить если таймер запущен
-                    xType={disabled ?'disabled' : ''}
+                    xType={disabled ? 'disabled' : ''}
                     onClick={start}
                 >
                     start
@@ -84,7 +86,7 @@ function Clock() {
                 <SuperButton
                     id={'hw9-button-stop'}
                     disabled={!disabled} // пишут студенты // задизэйблить если таймер не запущен
-                    xType={!disabled ?'disabled' : ''}
+                    xType={!disabled ? 'disabled' : ''}
                     onClick={stop}
                 >
                     stop
