@@ -35,7 +35,6 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
             finalClassName = s.button + ' ' + s.default
             break
     }
-
     return (
         <button
             disabled={disabled}
