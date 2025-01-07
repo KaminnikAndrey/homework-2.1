@@ -1,0 +1,25 @@
+.spanBlock {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 128, 255, 1);
+}
+
+.input {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.pen {
+    width: 25px;
+    height: 25px;
+}

@@ -1,0 +1,68 @@
+.button {
+    padding: 5px 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+
+.secondary {
+    color: rgba(0, 102, 204, 1);
+    border: 1px solid rgba(0, 102, 204, 1);
+    background-color: #fff;
+}
+
+.default {
+    background-color: rgba(0, 102, 204, 1);
+    color: #fff;
+}
+
+.red {
+    background-color: rgba(204, 20, 57, 1);
+    color: #fff;
+}
+
+.disabled {
+    background-color: rgba(0, 46, 92, 1);
+    color: black;
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.default:hover {
+    background-color: rgba(0, 128, 255, 1);
+}
+
+.red:hover {
+    background-color: rgba(255, 26, 71, 1);
+}
+
+/*.disable:hover {*/
+/*    background-color: rgba(0, 77, 153, 1);*/
+/*}*/
+
+.secondary:hover {
+    background-color: rgba(229, 240, 250, 1);
+}
+
+
+.default:active {
+    background-color: rgba(0, 89, 178, 1);
+}
+
+.secondary:active {
+    background-color: rgba(201, 229, 255, 1);
+}
+
+.red:active {
+    background-color: rgba(178, 18, 50, 1);
+}
+
+/*.disable:active {*/
+/*    background-color: rgba(201, 229, 255, 1);*/
+/*}*/
