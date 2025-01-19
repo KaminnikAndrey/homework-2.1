@@ -21,9 +21,11 @@ function HW11() {
         if(event.target.name[event.target.name.length - 1] === '1') {
             // value <= value2[1] && value <= value2[1] && setValue1(value)
             setValue1(value)
+            setValue2([value, 100])
         } else{
             // value1 <= value && setValue2([value, 100])
             setValue2(value as number[])
+            setValue1(value[0])
         }
     }
 
