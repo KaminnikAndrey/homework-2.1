@@ -1,8 +1,17 @@
 .container {
+    width: 250px;
+    height: 42px;
 }
 
 .wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .number {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Montserrat", sans-serif;
 }
