@@ -44,6 +44,7 @@ const SuperRange: React.FC<SliderProps> = (props) => {
         <Slider
             sx={{ alignItems: 'center', width: '150px', color: 'green', }}
             size="medium"
+            defaultValue={[0, 100]}
 
             {...props} // отдаём слайдеру пропсы если они есть (value например там внутри)
         />
