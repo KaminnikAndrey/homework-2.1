@@ -23,3 +23,13 @@ html {
     height: 35px;
     padding: 7px;
 }
+
+[data-theme='2'] .select{
+    color: #000000;
+    background: #DDEEFF;
+}
+
+[data-theme='3'] .select{
+    color: #FFFFFF;
+    background: #212A34;
+}
