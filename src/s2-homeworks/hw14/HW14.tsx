@@ -35,21 +35,23 @@ const HW14 = () => {
         getTechs(value)
             .then((res) => {
                 // делает студент
-
+                console.log(res)
+                if(res?.data.techs) {
+                    setTechs([...res?.data.techs])
+                }
                 // сохранить пришедшие данные
 
                 //
-            })
+            }).finally(() => setLoading(false))
     }
 
     const onChangeText = (value: string) => {
         setFind(value)
         // делает студент
-
         // добавить/заменить значение в квери урла
         // setSearchParams(
-
         //
+        setSearchParams({category: value})
     }
 
     useEffect(() => {
@@ -57,7 +59,7 @@ const HW14 = () => {
         sendQuery(params.find || '')
         setFind(params.find || '')
     }, [])
-
+    console.log(searchParams)
     const mappedTechs = techs.map(t => (
         <div key={t} id={'hw14-tech-' + t} className={s.tech}>
             {t}

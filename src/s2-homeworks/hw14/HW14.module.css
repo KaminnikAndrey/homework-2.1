@@ -3,5 +3,11 @@
 }
 
 .loading {
-
+    font-size: 14px;
+    line-height: 16px;
+    color: #4D4D4D;
+    font-family: Roboto, sans-serif;
+    width: 370px;
+    text-align: right;
+    margin-top: 10px;
 }
